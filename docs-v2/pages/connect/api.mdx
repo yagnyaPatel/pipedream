@@ -2180,6 +2180,7 @@ echo '{
 curl -X POST "https://api.pipedream.com/v1/connect/{your_project_id}/triggers/deploy" \
   -H "Authorization: Bearer {access_token}" \
   -H "Content-Type: application/json" \
+  -H "x-pd-environment: development" \
   -d @data.json
 ```
 </Tabs.Tab>
